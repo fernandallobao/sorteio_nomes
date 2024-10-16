@@ -1,0 +1,15 @@
+import random
+
+nomes = []
+
+while True:
+    nome = input("Digite um nome (ou 'sair' para finalizar): ")
+    if nome.lower() == 'sair':
+        break
+    nomes.append(nome)
+
+if nomes:
+    sorteado = random.choice(nomes)
+    print(f"O nome sorteado é: {sorteado}")
+else:
+    print("Nenhum nome foi adicionado.")
